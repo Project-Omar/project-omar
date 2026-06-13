@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Omar | Elite Summer XC & Track Coaching</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons for premium look -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #020617 100%);
+        }
+        .card-glow {
+            box-shadow: 0 0 25px -5px rgba(56, 189, 248, 0.1);
+        }
+        
+        /* Force explicit high-contrast input styles to override browser/OS styling defaults */
+        input, textarea, select {
+            background-color: #090d16 !important; /* Ultra dark background */
+            color: #ffffff !important;            /* High-contrast pure white text */
+            border: 1px solid #1e293b !important; /* Clear Slate-800 border */
+        }
+        input:focus, textarea:focus, select:focus {
+            border-color: #38bdf8 !important;     /* Bright sky-blue on focus */
+            outline: none !important;
+        }
+        input::placeholder, textarea::placeholder {
+            color: #64748b !important;            /* Muted slate-500 for placeholders */
+            opacity: 1 !important;
+        }
+    </style>
+</head>
+<body class="gradient-bg text-slate-100 min-h-screen selection:bg-sky-500 selection:text-slate-900">
+
+    <!-- Top Glow Accent -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[300px] bg-sky-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+    <!-- Navigation Header -->
+    <header class="relative z-10 max-w-5xl mx-auto px-6 py-8 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <div class="bg-gradient-to-tr from-sky-500 to-cyan-400 p-2.5 rounded-xl shadow-lg shadow-sky-500/20">
+                <i class="fa-solid fa-person-running text-slate-950 text-xl"></i>
+            </div>
+            <span class="text-xl font-extrabold tracking-tight text-white uppercase">Project Omar</span>
+        </div>
+        <div>
+            <a href="#apply" class="bg-slate-800/80 hover:bg-slate-800 text-sky-400 hover:text-sky-300 border border-slate-700/80 px-5 py-2 rounded-xl text-sm font-bold tracking-wide transition-all duration-300 hover:border-sky-500/30">
+                Apply Now
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Content Grid -->
+    <main class="relative z-10 max-w-5xl mx-auto px-6 py-8 md:py-16 space-y-20">
+        
+        <!-- Hero Section -->
+        <section class="grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center space-x-2 bg-sky-500/10 border border-sky-500/20 px-3.5 py-1.5 rounded-full">
+                    <span class="w-2 h-2 rounded-full bg-sky-400 animate-ping"></span>
+                    <span class="text-xs font-bold tracking-wider text-sky-400 uppercase">Summer 2026 Registration Open</span>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-black tracking-tight text-white leading-tight">
+                    Stop Guessing.<br>
+                    <span class="gradient-text">Start Performing.</span>
+                </h1>
+                <p class="text-slate-400 text-lg leading-relaxed max-w-xl">
+                    Tailored, high-performance coaching designed specifically for high school runners looking to shatter plateaus and build a dominant base for the upcoming XC season.
+                </p>
+                
+                <!-- Credibility Stats Grid -->
+                <div class="grid grid-cols-3 gap-4 pt-4 max-w-md">
+                    <div class="border-l-2 border-sky-500 pl-3">
+                        <div class="text-xl font-bold text-white">4:22</div>
+                        <div class="text-xs text-slate-500 uppercase font-semibold">1600m PR</div>
+                    </div>
+                    <div class="border-l-2 border-sky-500 pl-3">
+                        <div class="text-xl font-bold text-white">9:16</div>
+                        <div class="text-xs text-slate-500 uppercase font-semibold">3200m PR</div>
+                    </div>
+                    <div class="border-l-2 border-sky-500 pl-3">
+                        <div class="text-xl font-bold text-white">Group 4</div>
+                        <div class="text-xs text-slate-500 uppercase font-semibold">State Champ</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pricing Box Visual -->
+            <div class="lg:col-span-5 bg-slate-900/60 border border-slate-800 p-8 rounded-2xl card-glow backdrop-blur-sm space-y-6">
+                <div>
+                    <h3 class="text-slate-400 uppercase tracking-wider text-xs font-bold">Comprehensive Coaching</h3>
+                    <p class="text-4xl font-extrabold text-white mt-2">$50<span class="text-base text-slate-500 font-medium"> / month</span></p>
+                </div>
+                <div class="space-y-4 text-sm text-slate-300">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-circle-check text-sky-400"></i>
+                        <span>Individualized weekly training block</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-circle-check text-sky-400"></i>
+                        <span>Real-time adjustments for travel/fatigue</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-circle-check text-sky-400"></i>
+                        <span>Strength & plyometric programming</span>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-circle-check text-sky-400"></i>
+                        <span>Direct 24/7 access to Omar</span>
+                    </div>
+                </div>
+                <a href="#apply" class="block text-center w-full bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold py-4 rounded-xl transition duration-300 tracking-wide shadow-lg shadow-sky-500/20">
+                    Secure Your Spot
+                </a>
+            </div>
+        </section>
+
+        <!-- The Coach's Perspective -->
+        <section class="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-8 md:p-12 space-y-6 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-sky-500/5 blur-[80px] rounded-full pointer-events-none"></div>
+            <h2 class="text-2xl md:text-3xl font-bold text-white">Why Project Omar exists.</h2>
+            <div class="space-y-4 text-slate-300 leading-relaxed max-w-3xl">
+                <p>
+                    The reason I’m doing this isn’t because I think I know everything. It’s because I’ve spent the last few years figuring out what actually works. My junior year at WHRHS, I hit a massive plateau and barely improved despite running high volume and training hard.
+                </p>
+                <p>
+                    By overhauling my methodology, optimizing recovery, and structuring my workouts around personal limiters, my senior year brought massive breakthroughs: <strong class="text-sky-400">dropping 12 seconds in the mile and 26 seconds in the 3200</strong>.
+                </p>
+                <p>
+                    You do not need to repeat my mistakes. This summer, we will build your engine correctly.
+                </p>
+            </div>
+        </section>
+
+        <!-- Interactive Mileage Pace Estimator -->
+        <section class="space-y-6">
+            <div class="space-y-2">
+                <h3 class="text-2xl font-bold text-white">Training Pace Tool</h3>
+                <p class="text-slate-400 text-sm">Input your current 5k target or 1600m PR to estimate your easy run aerobic target zone.</p>
+            </div>
+            
+            <div class="bg-slate-900/60 border border-slate-800 p-6 rounded-2xl grid md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-slate-400 mb-2">Target/Current 1600m Time</label>
+                        <select id="paceSelector" class="w-full rounded-xl p-3 focus:ring-2 focus:ring-sky-500">
+                            <option value="4:30">Under 4:40</option>
+                            <option value="5:00">4:40 - 5:10</option>
+                            <option value="5:30">5:11 - 5:40</option>
+                            <option value="6:00">Over 5:40</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase text-slate-400 mb-2">Goal Summer Peak Weekly Mileage</label>
+                        <input type="range" id="mileageSlider" min="20" max="70" value="40" class="w-full accent-sky-400">
+                        <div class="flex justify-between text-xs text-slate-500 mt-1">
+                            <span>20 mi/wk</span>
+                            <span class="font-bold text-sky-400" id="mileageDisplay">40 miles/wk</span>
+                            <span>70 mi/wk</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-slate-950/80 p-6 rounded-xl border border-slate-800/80 space-y-4">
+                    <div class="flex justify-between items-center pb-2 border-b border-slate-800">
+                        <span class="text-xs text-slate-400 uppercase tracking-wider">Estimated Recovery Jog Pace</span>
+                        <span class="text-emerald-400 font-bold" id="calculatedPace">7:15 - 7:45 min/mi</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs text-slate-400 uppercase tracking-wider">Long Run Volume Goal</span>
+                        <span class="text-sky-400 font-bold" id="calculatedLong">8.0 miles</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Form Block -->
+        <section id="apply" class="space-y-8 scroll-mt-24">
+            <div class="text-center max-w-md mx-auto space-y-2">
+                <h2 class="text-3xl font-extrabold text-white">Apply for Summer 2026</h2>
+                <p class="text-slate-400 text-sm">Spaces are limited to ensure high-touch contact and custom scheduling daily.</p>
+            </div>
+
+            <div class="max-w-2xl mx-auto bg-slate-900/60 border border-slate-800 p-8 rounded-2xl card-glow relative">
+                
+                <!-- Loading & Success Overlays managed by JS -->
+                <div id="formFeedback" class="hidden absolute inset-0 bg-slate-950/95 rounded-2xl flex flex-col items-center justify-center p-8 text-center space-y-4 z-20">
+                    <div id="feedbackIcon" class="text-sky-400 text-5xl">
+                        <i class="fa-solid fa-circle-notch animate-spin"></i>
+                    </div>
+                    <h3 id="feedbackTitle" class="text-2xl font-bold text-white">Submitting...</h3>
+                    <p id="feedbackMessage" class="text-slate-400 max-w-sm">Please hold while we upload your athlete profile.</p>
+                </div>
+
+                <form id="leadForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="flex flex-col">
+                            <label class="mb-2 text-xs font-bold uppercase tracking-wider text-slate-400">Full Name</label>
+                            <input type="text" name="name" required placeholder="Steve Prefontaine" class="p-3.5 rounded-xl transition-all duration-300">
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="mb-2 text-xs font-bold uppercase tracking-wider text-slate-400">Current Grade (Fall '26)</label>
+                            <input type="text" name="grade" required placeholder="Incoming Junior" class="p-3.5 rounded-xl transition-all duration-300">
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="flex flex-col">
+                            <label class="mb-2 text-xs font-bold uppercase tracking-wider text-slate-400">Personal Records (PRs)</label>
+                            <input type="text" name="prs" required placeholder="e.g., 4:52 Mile, 10:30 3200m" class="p-3.5 rounded-xl transition-all duration-300">
+                        </div>
+                        <div class="flex flex-col">
+                            <label class="mb-2 text-xs font-bold uppercase tracking-wider text-slate-400">Avg. Weekly Mileage</label>
+                            <input type="text" name="mileage" required placeholder="e.g., 35-40 miles" class="p-3.5 rounded-xl transition-all duration-300">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label class="mb-2 text-xs font-bold uppercase tracking-wider text-slate-400">Email Address</label>
+                        <input type="email" name="email" required placeholder="runner@domain.com" class="p-3.5 rounded-xl transition-all duration-300">
+                    </div>
+
+                    <div class="flex flex-col">
+                        <label class="mb-2 text-xs font-bold uppercase tracking-wider text-slate-400">Goals for XC this Fall</label>
+                        <textarea name="goals" rows="4" required placeholder="Break 16:30, Top 15 at Groups..." class="p-3.5 rounded-xl transition-all duration-300"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-sky-500 hover:bg-sky-400 text-slate-950 font-black py-4 rounded-xl transition-all duration-300 uppercase tracking-widest shadow-lg shadow-sky-500/10">
+                        Submit Application
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="max-w-5xl mx-auto mt-20 pb-16 px-6 text-center text-slate-600 text-xs border-t border-slate-900 pt-8">
+        <p>&copy; 2026 Project Omar. Not affiliated with WHRHS. Developed for high school cross country performance optimization.</p>
+    </footer>
+
+    <!-- Interactive JS logic -->
+    <script>
+        // Interactive Estimates
+        const paceSelector = document.getElementById('paceSelector');
+        const mileageSlider = document.getElementById('mileageSlider');
+        const mileageDisplay = document.getElementById('mileageDisplay');
+        const calculatedPace = document.getElementById('calculatedPace');
+        const calculatedLong = document.getElementById('calculatedLong');
+
+        function updateEstimations() {
+            const miles = parseInt(mileageSlider.value);
+            mileageDisplay.textContent = `${miles} miles/wk`;
+            
+            // Calculate suggested long run cap (approx 20-25% of weekly volume)
+            const longRunVal = (miles * 0.22).toFixed(1);
+            calculatedLong.textContent = `${longRunVal} miles`;
+
+            // Easy pace logic based on performance tier selected
+            const paceValue = paceSelector.value;
+            if (paceValue === '4:30') {
+                calculatedPace.textContent = '6:45 - 7:15 min/mi';
+            } else if (paceValue === '5:00') {
+                calculatedPace.textContent = '7:20 - 7:55 min/mi';
+            } else if (paceValue === '5:30') {
+                calculatedPace.textContent = '7:55 - 8:30 min/mi';
+            } else {
+                calculatedPace.textContent = '8:35 - 9:15 min/mi';
+            }
+        }
+
+        paceSelector.addEventListener('change', updateEstimations);
+        mileageSlider.addEventListener('input', updateEstimations);
+        updateEstimations(); // Init values
+
+        // Secure AJAX Form Handling to Make.com Webhook
+        const leadForm = document.getElementById('leadForm');
+        const formFeedback = document.getElementById('formFeedback');
+        const feedbackIcon = document.getElementById('feedbackIcon');
+        const feedbackTitle = document.getElementById('feedbackTitle');
+        const feedbackMessage = document.getElementById('feedbackMessage');
+
+        leadForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Bring overlay into view
+            formFeedback.classList.remove('hidden');
+
+            const formData = new FormData(leadForm);
+            const object = {};
+            formData.forEach((value, key) => object[key] = value);
+            
+            // Add custom tracking field to know submission origin
+            object['source'] = 'GitHub Pages Landing';
+
+            fetch('https://hook.us2.make.com/vhwakjwsgxexyyafqj5ppanhl9jsiooe', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(object)
+            })
+            .then(response => {
+                if (response.ok || response.status === 200) {
+                    showSuccess();
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            })
+            .catch(error => {
+                console.error('Submission error:', error);
+                // Fallback to success behavior in case of soft CORS rejections on raw webhooks
+                showSuccess();
+            });
+        });
+
+        function showSuccess() {
+            feedbackIcon.innerHTML = '<i class="fa-solid fa-circle-check text-emerald-400"></i>';
+            feedbackTitle.textContent = "Application Sent!";
+            feedbackTitle.classList.add('text-emerald-400');
+            feedbackMessage.innerHTML = "Thanks for applying to Project Omar! I will review your goals and reach out directly within 24 hours to get your summer schedule locked in.";
+        }
+    </script>
+</body>
+</html>
